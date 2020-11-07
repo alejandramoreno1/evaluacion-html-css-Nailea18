@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>informacion general sobre html 5</title>
+    <link rel="icon" type="image/png" href="mi cc.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+    <div class="border">
+    <h1 class="titulo">HTML 5 y características.</h1>
+    
+    <div class="menu">
+        <nav>
+        <a href="Index.html">Etiquetas de texto</a>
+        <a href="Formato.html">Encabezados, Ubicación y Formato</a>
+        <a href="Tablas.html">Tablas</a>
+        <a href="numeración y viñetas.html">Numeración y Viñetas</a>
+        <a href="Formularios.html">Formularios y carga de datos </a>
+       </nav>
+     </div>
+    
+    <h2>Etiquetas para numeración y viñetas</h2>
+    <p>La creación de la numeración y vinetas en HTML, se realiza atraves de listas ordenadas estas son elementos muy importantes de alto significado semántico. Una lista ordenada en HTML es aquella en la que los elementos estan enumerados o marcado con algún signo alfanumérico que indique el orden de los elementos. Con el apoyo de las siguentes etiquetas podemos añadir la numeración y viñetas.</p>
+    <!--Etiqueta <ol>--> <h3>Etiqueta&lt;ol&gt;</h3>
+        <p>Se utiliza la etiqueta html <!--<ol>--> <b>&lt;ol&gt;</b> para crear listas ordenadas, entre la etiqueta de apertura y cierre irán los elementos de la lista dentro de una etiqueta <!--<li>--> <b>&lt;li&gt;</b> respectivamencte.</p>
+    <!--Etiqueta <il>--> <h3>Etiqueta&lt;li&gt;</h3>
+
+        <p>En cualquier caso la etiqueta <!--<li>--> <b>&lt;li&gt;</b> sirve para indicar los elementos de la lista, independientemente de si son ordenadas o desordenadas.</p>
+        <h2>Ejemplos de listas ordenadas en HTML:</h2>
+
+        <div align="center"><img src="s.png" alt="se"></div>
+
+        <ol>
+            <li>Lunes</li>
+            <li>Martes</li>
+            <li>Miercoles</li>
+            <li>Jueves</li>
+            <li>Viernes</li>
+            <li>Sabado</li>
+            <li>Domingo</li>
+        </ol>
+<h2>Cómo poner viñetas en listas de HTML</h2>
+
+<p>Poner viñetas en una lista html es tan fácil como lo veremos a continuación, se trata de poner estilo a nuestro elemento de lista y para ello emplearemos el atributo <mark>STYLE</mark> con unos valores pensados para este fin.</p>
+
+<h3>Atributo style</h3>
+
+<p>Para crear <b>listas con viñetas en HTML</b> utilizamos el atributo <mark>style</mark>, esto indicará que la lista tendrá un estilo especial, emplea una propiedad y en este caso será la propiedad de <mark>list-style-type</mark> y básicamente hace referencia al tipo de viñeta, finalmente el valor de dicha propiedad determina el tipo de viñeta que se mostrará, en nuestro caso queremos poner viñetas diferentes a los predeterminados ¿verdad? Pues bien, conozcamos los posibles valores que puede tomar y su respectiva descripción.</p>
+
+<h3>Valores para tipos de viñeta HTML:</h3>
+
+<ul>
+    <li><mark>disc:</mark></li>
+    <dl>
+        <dt>este es el valor predeterminado.</dt>
+    </dl>
+    <li><mark>circle:</mark></li>
+    <dl>
+        <dt>muestra marcador es un círculo hueco.</dt>
+    </dl>
+    <li><mark>square:</mark></li>
+    <dl>
+        <dt> muestra marcador es un cuadrado.</dt>
+    </dl>
+    <li><mark>decimal:</mark></li>
+    <dl>
+        <dt>marcador es un número decimal, que comienza con 1.</dt>
+    </dl>
+    <li><mark>lower-roman:</mark></li>
+    <dl>
+        <dt>marcador es un número romano en minúscula (i, ii, iii, iv, v, etc.)</dt>
+    </dl>
+    <li><mark>upper-roman:</mark></li>
+    <dl>
+        <dt>el marcador es un número romano en mayúscula (I, II, III, IV, V, etc.)</dt>
+    </dl>
+</ul>
+
+<p>Además de estos existen muchos más que podemos utilizar, por ejemplo: lower-greek, lower-latin, upper-latin, lower-alpha, upper-alpha, none.</p>
+
+<h3>Ejemplos para poner viñetas en listas HTML</h3>
+
+<p>En el siguiente ejemplo veremos como emplear el atributo style y la propiedad list-style-type con sus respectivos valores, ademas de como se ve el resultado final:</p>
+
+<div align="center"><img src="lis.png" alt="l"></div>
+
+<ul style="list-style-type: circle">
+     <li>Nailea</li>
+     <li>Paola</li>
+     <li>Cordero</li>
+     <li>Diaz</li>
+</ul>
+<ul style="list-style-type: square">
+     <li>Nailea</li>
+     <li>Paola</li>
+     <li>Cordero</li>
+     <li>Diaz</li>
+</ul>
+<ul style="list-style-type: upper-roman">
+     <li>Nailea</li>
+     <li>Paola</li>
+     <li>Cordero</li>
+     <li>Diaz</li>
+</ul>
+<ul style="list-style-type: lower-greek">
+     <li>Nailea</li>
+     <li>Paola</li>
+     <li>Cordero</li>
+     <li>Diaz</li>
+</ul>
+</div>    
+</body>
+</html>

@@ -1,0 +1,159 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>informacion general sobre html 5</title>
+    <link rel="icon" type="image/png" href="mi cc.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="border">
+    <h1 class="titulo">HTML 5 y características.</h1>
+    <div class="menu">
+        <nav>
+        <a href="Index.html">Etiquetas de texto</a>
+        <a href="Formato.html">Encabezados, Ubicación y Formato</a>
+        <a href="Tablas.html">Tablas</a>
+        <a href="numeración y viñetas.html">Numeración y Viñetas</a>
+        <a href="Formularios.html">Formularios y carga de datos </a>
+       </nav>
+     </div>
+     
+    <h2>Etiquetas para formularios y carga de datos en HTML</h2>
+
+    <p>Un formulario es un conjunto de controles (botones, cajas de texto, casillas de verificación, botones radio, etc) que permiten al usuario introducir datos y enviarlos al servidor web para su procesamiento.</p>
+
+    <form action="">
+
+        <fieldset>
+            <legend><strong>Datos del Usuario</strong></legend>
+
+            <label for="Name"><b>Nombre:</b></label><br>
+            <input type="text" id="Name" name="Name" placeholder="Ingrese su Nombre"><br><br>
+    
+            <label for="email"><b>Correo:</b></label><br>
+            <input type="email" id="" name="email" placeholder="Ingrese su correo" required><br><br>
+
+            <label for="Birthday"><b>Fecha de Nacimiento:</b></label><br><br>
+            <input type="date" id="Birthday" name="Birthday"><br><br>
+
+            <textarea name="Description" id="Description" cols="50" rows="10"></textarea><br><br>
+            
+            <input type="submit">
+            <input type="reset" value="Borrar">
+
+        </fieldset>
+    </form>
+
+    <p>La etiqueta que delimita un formulario es la etiqueta <!--<form>--><b>&lt;form&gt;</b> ...<!--</form>--><b>&lt;/form&gt;</b>. Este elemento define formalmente un formulario. Es un elemento contenedor, como un elemento <!--<section>--><strong>&lt;section&gt;</strong> o <!--<footer>--><strong>&lt;footer&gt;</strong>, pero específico para contener formularios; también admite algunos atributos específicos para la configuración de la forma en que se comporta el formulario. Todos sus atributos son opcionales, pero es una práctica estándar establecer siempre al menos los atributos:</p>
+
+        <p><b>action:</b> contiene el nombre del agente que procesará los datos remitidos al servidor (por ejemplo, un script de PHP)</p>
+        <p><b>method:</b> define la manera de enviar los datos al servidor. Los valores posibles son:</p>
+        <ul>
+            <li>get:</li>
+            <dt>
+                <dl>los valores enviados se añaden a la dirección indicada en el atributo action</dl>
+            </dt>
+            <li>post:</li>
+            <dt>
+                <dl>los valores se envían de forma separada</dl>
+            </dt>
+        </ul>
+
+    <p>Si el atributo method no está establecido, el formulario se comporta como si el valor fuera <b>get</b>.</p>
+
+    <p>La etiqueta <!--<form>--><b>&lt;form&gt;</b> es un elemento de bloque. En su interior puede haber cualquier elemento típico de una página web (párrafos, imágenes, divisiones, listas, tablas, etc.), además de las etiquetas que crean los controles.</p>
+    
+    <p>Los etiquetas que crean los controles en los formularios son <!--<input>--><b>&lt;input&gt;</b>, <!--<button>--><b>&lt;button&gt;</b>, <!---<select>--><b>&lt;select&gt;</b>, <!--<optgroup>--><b>optgroup</b>, <!--<option>--> y <!--<textarea>--><b>&lt;optgroup&gt;</b>. Además, se pueden estructurar los controles con las etiquetas <!--<fieldset>--><b>&lt;fieldset&gt;</b> y <!--<legend>--><b>&lt;legend&gt;</b>. Por último, la etiqueta <!--<label>--><b>&lt;label&gt;</b> permite mejorar la accesibilidad de los controles. <br><br>
+
+    El navegador envía únicamente los datos de los controles contenidos en el formulario. En una misma página puede haber varios formularios que envíen datos al mismo o a diferentes agentes.</p>
+
+    <h2>Los elementos <!--<label>--><b>&lt;label&gt;</b>, <!--<input>--><b>&lt;input&gt;</b> y <!--<textarea>--><b>&lt;textarea&gt;</b><!--</textarea>--><b>&lt;/textarea&gt;</b></h2>
+
+        <p>Nuestro formulario de contacto no es complejo: la parte para la entrada de datos contiene tres campos de texto, cada uno con su elemento <!--<label>--><b>&lt;label&gt;</b> correspondiente:</p>
+
+            <ul>
+                <li>El campo de entrada para el nombre es un campo de texto de una sola línea.</li>
+                <li>El campo de entrada para el correo electrónico es una entrada de datos de tipo correo electrónico: un campo de texto de una sola línea que acepta solo direcciones de correo electrónico.</li>
+                <li>El campo de entrada para el mensaje es <!--<textarea>--><b>&lt;textarea&gt;</b>; un campo de texto multilínea.</li>
+            </ul>
+        
+         <p>
+            En el elemento <!--<input>--><b>&lt;input&gt;</b>, el atributo más importante es <b>type</b>. Este atributo es muy importante porque define la forma en que el elemento <!--<input>--><b>&lt;input&gt;</b> aparece y se comporta.</p>   
+
+    <h2>El atributo type</h2>
+
+        <p>El atributo type de la etiqueta <!--<input>--><strong>&lt;input&gt;</strong> indica el tipo de control de que se trata. <br><br>
+            
+         En HTML 5 se añadieron los tipos de <!--<input>--><strong>&lt;input&gt;</strong> botón <b>button</b>, número <b>number</b>, búsqueda <b>search</b>, teléfono <b>tel</b>, dirección web <b>url</b>, dirección de correo <b>email</b>, fecha <b>date</b>, hora <b>time</b>, color <b>color</b> y rango <b>range</b>.</p>
+
+    <h2>El atributo name</h2>
+
+    <p>El atributo name identifica al control. <br><br>
+
+    Todos los controles de un formulario deben tener el atributo name porque, en general, sólo se envían los controles que lo tienen (aunque hay excepciones, como los controles de tipo imagen o los botones, que no los necesitan). <br><br>
+        
+    En general, los atributos name no se deben repetir, porque no se recibiría toda la información al enviarla. La única excepción es el botón radio.</p>
+
+    <h2>El atributo value</h2>
+
+    <p>El atributo value permite establecer el valor inicial de un control, aunque cada control lo utiliza de una forma ligeramente distinta y algunos controles no lo admiten (área de texto, archivo o imagen). <br><br>
+
+    En algunos casos (botones) el valor se muestra al usuario y el usuario no puede modificarlo. En otros casos (cajas de texto, contraseña) el valor se muestra en la página y el usuario puede modificarlo. En otros casos (casillas de verificación, botones radio, opciones de menú, oculto) el valor no se muestra en la página y el usuario no puede modificarlo. <br><br>
+            
+    En algunos casos (botones, oculto, botones radio) el atributo value es necesario. En otros casos (casilla de verificación, opciones de menú) es conveniente. En otros casos (cajas de texto, contraseña, imagen) puede omitirse. En el caso del selector de archivo, los navegadores no lo admiten por motivos de seguridad.</p>
+
+    <h2>El atributo required</h2>
+
+    <p>El atributo <strong>required</strong> permite indicar qué controles es obligatorio rellenar para enviar el formulario. <br><br>
+        
+    Si alguna de las opciones de un botón radio tiene establecido el atributo required, el control es obligatorio.</p>
+        
+    <h2>El atributo placeholder</h2>
+
+    <p>El atributo <strong>placeholder</strong> permite mostrar en los controles de texto un texto que desaparece al escribir en el control.</p>
+
+    <h2>El atributo size</h2>
+
+    <p>El atributo <strong>size</strong> permite establecer la longitud de los controles de texto <b>(text, password, search, etc.)</b>. Por omisión, las cajas suelen tener 20 caracteres de longitud.</p>
+
+    <h2>Los atributos maxlength y minlength</h2>
+
+    <p>Los atributos <strong>maxlength</strong> y <strong>minlength</strong> permiten establecer la longitud máxima y mínima, respectivamente, que puede escribir el usuario en un control de texto <b>(text, password, search, etc.)</b>.</p>
+
+    <h2>El atributo autofocus</h2>
+
+    <p>El atributo <strong>autofocus</strong> permite indicar el control que debe tener el foco al cargarse el formulario. <br><br>
+
+    Este atributo facilita la accesibilidad del formulario pues permite que el usuario pueda empezar a rellenar el formulario sin necesidad de hacer clic en el elemento. Como el navegador desplaza automáticamente la página hasta la posición del elemento, se recomienda que el elemento con atributo <strong>autofocus</strong> se encuentren al principio de la página, para que el desplazamiento no confunda al usuario. <br><br>
+            
+    <b>Nota:</b> En estos apuntes (lecciones y ejercicios) no se utiliza este atributo porque como en las páginas se incluyen varios formularios en distintas posiciones de la página, el desplazamiento automático a un elemento con atributo <strong>autofocus</strong> puede confundir al lector.</p>
+
+    <h2>El atributo disabled</h2>
+
+    <p>El atributo <strong>disabled</strong> permite deshabilitar el control. Una vez deshabilitado, el control ni siquiera puede coger el foco.</p>
+
+    <h2>El atributo readonly</h2>
+
+    <p>El atributo readonly hace que el control no sea modificable, aunque el control puede coger el foco.</p>
+
+    <h2>El atributo tabindex</h2>
+
+    <p>El atributo <strong>tabindex</strong> permite controlar el orden en que el foco pasa de un elemento a otro mediante el tabulador (<b>Tab</b> para avanzar y <b>Shift+Tab</b> para retroceder). Los valores de <strong>tabindex</strong> pueden ser números naturales (incluido el cero), no necesariamente consecutivos. Si no está presente, los controles se visitan en el orden en que aparecen en el texto. Si está presente, los controles se visitan de menor a mayor.</p>
+
+    <h2>El atributo accesskey</h2>
+
+    <p>El atributo <strong>accesskey</strong> establece la tecla que coloca el foco en un elemento de un formulario, pero los navegadores Google Chrome y Firefox no utilizan los mismos atajos de teclado, como se comenta en la lección de diferencias entre navegadores.</p>
+
+    <ul>
+        <li>Firefox utiliza la combinación <b>Alt+Shift+tecla</b></li>
+        <li>Google Chrome utilizan normalmente la combinación <b>Alt+tecla</b>, pero cuando esa combinación ya está asociada a alguna acción usa la combinación <b>Alt+Shift+tecla</b></li>
+    </ul>
+
+    <p>La última parte, y quizás la más complicada, es manejar los datos del formulario en el lado del servidor. El elemento <!--<form>--><strong>&lt;form&gt;</strong> define dónde y cómo enviar los datos gracias a los atributos <b>action</b> y <b>method</b>.
+
+     Proporcionamos un nombre (<b>name</b>) a cada control de formulario. Los nombres son importantes tanto en el lado del cliente como del servidor; le dicen al navegador qué nombre debe dar a cada dato y, en el lado del servidor, dejan que el servidor maneje cada dato por su nombre. Los datos del formulario se envían al servidor como pares de nombre/valor.
+        
+    Para poner nombre a los diversos datos que se introducen en un formulario, debes usar el atributo name en cada control de formulario que recopila un dato específico.</p>
+</div>    
+</body>
+</html>

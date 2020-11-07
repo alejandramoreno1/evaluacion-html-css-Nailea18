@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>informacion general sobre html 5</title>
+    <link rel="icon" type="image/png" href="mi cc.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+    <div class="border">
+    <h1 class="titulo">HTML 5 y características.</h1>
+    
+    <div class="menu">
+        <nav>
+        <a href="Index.html">Etiquetas de texto</a>
+        <a href="Formato.html">Encabezados, Ubicación y Formato</a>
+        <a href="Tablas.html">Tablas</a>
+        <a href="numeración y viñetas.html">Numeración y Viñetas</a>
+        <a href="Formularios.html">Formularios y carga de datos </a>
+       </nav>
+     </div>
+    
+    <h2><u>Etiquetas para Tablas</u></h2>
+
+    <h2>¿Qué son tablas?</h2>
+
+    <p>Una tabla no es otra cosa más que un medio de organizar datos en filas y columnas. Este concepto ha estado presente en nuestra sociedad por un largo período de tiempo y ha sido adoptado por HTML en sus etapas iniciales, como una forma de transmitir información que, de otro modo, no sería comprendida tan fácilmente.</p>
+
+     <p>En documentos HTML una tabla puede ser considerada, resumidamente, como un grupo de filas donde cada una contiene a un grupo de celdas. Esto es conceptualmente distinto a un grupo de columnas que contiene a un grupo de filas, y esta diferencia tendrá un impacto en la composición y comportamiento de la tabla.</p>
+
+     <p>Como muchas otras estructuras de HTML, las tablas son construidas utilizando elementos. En particular, una tabla básica puede ser declarada usando tres elementos, a saber, <strong>table</strong> (el contenedor principal), <strong>tr</strong> (representando a las filas contenedoras de las celdas) y <strong>td</strong> (representando a las celdas).</p>
+
+     <!--Etiqueta <table>--> <h3>Etiqueta&lt;table&gt;</h3>
+
+    <p>Señala el inicio y final de una tabla. Sus atributos son:</p>
+
+    <ul>
+        <li>Align</li>
+        <dl>
+            <dt>
+            Establece la alineación de la tabla o texto mediante ALIGN=LEFT o ALIGN=RIGHT.
+        </dt>
+        </dl>
+        <li>Bgcolor</li>
+        <dl>
+            <dt>
+            Establece el color de fondo de las celdas de la tabla.
+        </dt>
+        </dl>
+        <li>Border</li>
+        <dl>
+            <dt>
+            Determina el ancho del borde en pixeles.
+        </dt>
+        </dl>
+        <li>BorderColor</li>
+        <dl>
+            <dt>
+            Asigna un color al borde.
+        </dt>
+        </dl>
+        <li>BorderDark</li>
+        <dl>
+            <dt>
+            Determina el color de la parte oscura de un borde de 3 dimensiones.
+            </dt>
+        </dl>
+        <li>BorderLight</li>
+        <dl>
+            <dt>
+            Asigna el color de la parte clara de un borde de 3 dimensiones.
+        </dt>
+        </dl>
+        <li>Caption</li>
+        <dl>
+            <dt>
+            Especifica el titulo para la tabla.
+        </dt>
+        </dl>
+        <li>Cellpadding</li>
+        <dl>
+            <dt>
+            Establece la cantidad de espacio libre junto al contenido de una celda.
+            </dt>
+        </dl>
+        <li>Cellspacing</li>
+        <dl>
+            <dt>
+            Asigna la cantidad de espacio entre las celdas de una tabla.
+           </dt>
+        </dl>
+        <li>Width</li>
+        <dl>
+            <dt>
+            Determina el ancho de la tabla en pixeles o en un porcentaje.
+            </dt>
+        </dl>
+    </ul>
+    <!--Etiqueta <th>--> <h3>Etiqueta&lt;th&gt;</h3>
+
+        <p>Indica al navegador cliente que exhiba el texto como un encabezado en la primera fila de una tabla. Atributos principales:
+            <ul>
+                <li>Colspan</li>
+                <dl>
+                    <dt>
+                        Especifica el número de celdas que cubre el encabezado.
+                    </dt>
+                </dl>
+                <li>Align</li>
+                <dl>
+                    <dt>
+                        Determina la posición del texto del titilo.
+                    </dt>
+                </dl>
+            </ul>
+        </p>
+<!--Etiqueta <tr>--> <h3>Etiqueta&lt;tr&gt;</h3>
+<p>
+    Indica al navegador que exhiba el texto dentro de una fila; puede también interpretarse como la etiqueta que define filas.
+    <ul>
+    <li>Align</li>
+    <dl>
+            Alineación del texto/objetos en toda la fila.
+    </dl>
+    </ul>
+</p>
+<!--Etiqueta <td>--> <h3>Etiqueta&lt;td&gt;</h3>
+    <p>
+        La etiqueta de datos de la tabla, es la que identifica a las columnas o celdas específicas de una tabla. Atributos principales:
+        <ul>
+            <li>Aling</li>
+            <dl>
+                <dt>
+                    Alineación del texto/objeto de la celda.
+                </dt>
+            </dl>
+            <li>Bgcolor</li>
+            <dl>
+                <dt>
+                    Color de fondo de la celda.
+                </dt>
+            </dl>
+            <li>Width</li>
+            <dl>
+                <dt>
+                </dt>
+            </dl>
+        </ul>
+    </p>
+    <p><b>Dejémoslo más claro con un ejemplo:</b></p>    
+
+    <p>Al crear una tabla para un horario el código quedaría así;</p>
+
+    <div align="center"><img src="ho.png" alt="hora"></div>
+
+    <p>Y de esta manera se mostraria en pantalla para el usuario</p>
+
+    <table border="1" style="margin: 0 auto;">
+        <caption>Mi Horario</caption>
+           <tr>
+               <th colspan="5" bgcolor="AQUA">HORARIO</th>
+               <th colspan="2" bgcolor="RED">Fin de Semana</th>
+         </tr>
+               <tr bgcolor="YELLOW">
+               <th>Lunes</th>
+               <th>Martes</th>
+               <th>Miercoles</th>
+               <th>Jueves</th>
+               <th>Viernes</th>
+               <th>Sabado</th>
+               <th>Domingo</th>
+         </tr>
+               <tr bgcolor="SILVER">
+               <th>Programar</th>
+               <th>Programar</th>
+               <td>Programar</td>
+               <td>Programar</td>
+               <td>Programar</td>
+               <td>Descansar</td>
+               <td>Descansar</td>
+         </tr>
+                <tr bgcolor="SILVER">
+                <td>Programar</td>
+                <td>Programar</td>
+                <td>Programar</td>
+                <td>Programar</td>
+                <td>Programar</td>
+                <td>Descansar</td>
+                <td>Descansar</td>
+         
+         </tr>
+                <tr bgcolor="SILVER">
+                <td>Programar</td>
+                <td>Programar</td>
+                <td>Programar</td>
+                <td>Programar</td>
+                <td>Programar</td>
+                <td>Descansar</td>
+                <td>Descansar</td>
+         </tr>
+       </table>
+</div>    
+</body>
+</html>

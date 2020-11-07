@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>informacion general sobre html 5</title>
+    <link rel="icon" type="image/png" href="mi cc.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="border">
+    <h1 class="titulo">HTML 5 y características.</h1>
+    
+    <div class="menu">
+        <nav>
+            <a href="Index.html">Etiquetas de texto</a>
+            <a href="Formato.html">Encabezados, Ubicación y Formato</a>
+            <a href="Tablas.html">Tablas</a></li>
+            <a href="numeración y viñetas.html">Numeración y Viñetas</a>
+            <a href="Formularios.html">Formularios y carga de datos </a>
+       </nav>
+     </div>
+     <br>
+    <br>
+    <div align="center"><img src="aaa.png" alt="al"></div>
+
+    <h2>Etiquetas de encabezados</h2>
+    
+    <p>La etiqueta <!--<header>--> está pensada para agrupar el contenido inicial de una página web. Puede contener únicamente los elementos que aparecen en las páginas de un sitio (el logotipo y un menú general, por ejemplo) o incluir también elementos particulares de la página (el título principal <!--<h1>--> <strong>&lt;h1&gt;</strong> de la página, enlaces de navegación dentro de la página, texto de introducción, por ejemplo). <br><br>
+    
+    El elemento <!--<header>--> <strong>&lt;header&gt;</strong> puede estar incluido en <!--<body>--> <strong>&lt;body&gt;</strong> y entonces se entiende que es el encabezado de la página en su conjunto, pero también se puede incluir en <!--<article>--><strong>las etiqueta &lt;article&gt;</strong>, <!--<section>--><strong>&lt;section&gt;</strong>, <!--<nav>--><strong>&lt;nav&gt;</strong> y <!--<aside>--><strong>&lt;aside&gt;</strong> y entonces se entiende que es el encabezado del elemento que lo contiene.</p>
+    
+    <p>Por ejemplo, lo más común es reservar la etiqueta H1 para el nombre del sitio web. Por ejemplo, en nuestro caso, nuestro H1 seria: <!--<h1>--> <strong>Etiqueta &lt;h1&gt;</strong></p>
+    
+    <p>Como la etiqueta H1 indica que el texto que se remarca es muy importante, mucha gente tiende a poner textos o palabras clave dentro de etiquetas H1 a lo largo de una página web. Esto es una práctica errónea, y que hará que nuestra página web no valide, y que incluso buscadores como google puedan penalizarnos a la hora del posicionamiento.
+    </p>
+    
+    <p>Solo puede haber una etiqueta H1 por cada documento HTML. De los demás encabezados si puede haber más de uno, pero siempre en orden jerárquico y después de que hayamos puesto la etiqueta anterior. Es decir, puede haber 2 o 3 etiquetas H2 por ejemplo, pero siempre después de que hayamos puesto una etiqueta H1. Por ejemplo etiquetas H2 pueden ser los elementos de menú de nuestra página web. Aunque también se suelen utilizar para extender la información acerca de la página web.</p>
+    
+    <p>Es habitual reservar encabezados H3 y H4 para títulos de apartados, títulos de entradas de noticias o blogs, y para textos destacados dentro de un párrafo.</p>
+    
+    <!--Asi debe lucir un titulo con las etiquetas <h1>-->
+    <h1 >Etiqueta de titulo &lt;h1&gt;</h1>
+    <!--Asi debe lucir un titulo con las etiquetas <h2>-->
+    <h2 class="">Etiqueta  de titulo &lt;h2&gt;</h2>
+    <!--Asi debe lucir un titulo con las etiquetas <h3>-->
+    <h3 class="tres">Etiqueta  de titulo &lt;h3&gt;</h3>
+    <!--Asi debe lucir un titulo con las etiquetas <h4>-->
+    <h4>Etiqueta  de titulo &lt;h4&gt;</h4>
+    <!--Asi debe lucir un titulo con las etiquetas <h5>-->
+    <h5>Etiqueta  de titulo &lt;h5&gt;</h5>
+    <!--Asi debe lucir un titulo con las etiquetas <h6>-->
+    <h6>Etiqueta  de titulo &lt;h6&gt;</h6>
+    
+    <h2>Etiquetas de ubicación</h2>
+
+    <p>El elemento HTML <!--<nav>--><strong>&lt;nav&gt;</strong> representa una sección de una página cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual o a otros documentos. Ejemplos comunes de secciones de navegación son menús, tablas de contenido e índices.</p>
+    
+    <p>El elemento HTML Anchor <!--<a>--><strong>&lt;a&gt;</strong> crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL.</p>
+
+        <h3>Atributos</h3>
+
+        <p>Este elemento incluye los atributos globales.</p>
+
+        <p><mark><b>download</b></mark> Este atributo, indica descargar a los navegadores una URL en lugar de navegar hacia ella, por lo que el usuario será dirigido para salvarla como un archivo local.  Si el atributo tiene un valor, éste se utilizará como nombre de archivo por defecto en el mensaje Guardar que se abre cuando el usuario hace clic en el enlace (sin embargo, el usuario puede cambiar el nombre antes de guardar el archivo). No hay restricciones sobre los valores permitidos, aunque: / y: \ se convertirán en guiones bajos (underscores), lo que evitará sugerencias de ruta específicas.  Se debe tener en cuenta que la mayoría de los sistemas de archivos tienen limitaciones con respecto a los símbolos de puntuación admitidos en los nombres de archivo, por lo que los navegadores ajustarán los nombres de los archivos en consecuencia.</p>
+
+        <p><mark><b>href</b></mark> Contiene una URL o un fragmento de URL al cual apunta el enlace. <br><br>
+            Un fragmento de URL es un nombre ("name") precedido por el símbolo de número (#), el cual especifíca una ubicación interna objetivo (un ID de un elemento HTML) dentro del actual documento. Las URLs no están restringidas sólo a documentos de internet basados en HTTP, sin embargo pueden utilizar cualquier protocolo soportado por el navegador. Por ejemplo, <mark><b>file:</b></mark>, <mark><b>ftp:</b></mark>, and <mark><b>mailto:</b></mark> funcionan en la mayoría de los navegadores. <br><br>
+            Este atributo puede ser omitido (a partir de HTML5) para crear un enlace de marcador de posición. Un enlace de marcador de posición se parece a un enlace tradicional, pero que no dirige a algún lugar.</p>
+
+            <p><mark><b>hreflang</b></mark> Este atributo indica el lenguaje humano del recurso al que se enlaza. Este es únicamente informativo, sin ninguna funcionalidad incorporada. Los valores permitidos están determinados por BCP47.</p>
+
+            <p><mark><b>referrerpolicy</b></mark> Indica que referencia (referer) enviar cuado la URL es recuperada:</p>
+
+            <ul>
+                <li><mark><b>'no-referrer'</b></mark></li>
+                <dt>significa <b>Referer:</b> el encabezado no será enviado.</dt>
+                <li><mark><b>'no-referrer-when-downgrade'</b></mark></li>
+                <dt>significa <b>Referer:</b> el encabezado será enviado cuando se navega a un origen (<b>origin</b>) sin HTTPS. Este es un comportamiento por defecto.</dt>
+                <li><mark><b>'origin'</b></mark></li>
+                <dt>significa que el "referrer" estará en el origen (origin) de la página, no incluye la información posterior al dominio.</dt>
+                <li><mark><b>'origin-when-cross-origin'</b></mark></li>
+                <dt>significa que la navegación a otros orígenes (origins) será limitada al esquema (scheme), el host y el puerto, mientras que la navegación en el mismo origen (origin) incuirá la trayectoria de referencia (referrer's path).</dt>
+                <li><mark><b>'unsafe-url'</b></mark></li>
+                <dt>significa que la referncia (referrer) incuirá el origen(origin) y la trayectoria (path), pero no el fragmento, contraseña o nombre de usuario. Esto es inseguro, ya que puede filtrar datos desde una URL segura hacia URLs inseguras.</dt>
+            </ul>
+           
+          <p><mark><b>rel</b></mark> Especifica la relación del objeto de destino con el objeto de enlace. El valor es una lista separada por espacios de tipos de enlace tipos de enlace (link types).</p> 
+          
+          <p><mark><b>target</b></mark> Especifica en donde desplegar la URL enlazada. Es un nombre (name of), o palabra clave (keyword for), un contexto de navegación (browsing context): una pestaña, ventana, o <!--<iframe>--><strong>&lt;frame&gt;</strong>. Las siguientes palabras clave (keywords) tienen significado especial:</p>
+
+            <ul>
+                <li><mark><b>_self:</b></mark></li>
+                <dt>Carga la URL en el mismo contexto de navegación que el actual. Este es el comportamiento por defecto.</dt>
+                <li><mark><b>_blank:</b></mark></li>
+                <dt>Carga la URL en un nuevo contexto de navegación. Usualmente es una pestaña, sin embargo, los usuarios pueden configurar los navegadores para utilizar una ventana nueva en lugar de la pestaña.</dt>
+                <li><mark><b>_parent:</b></mark></li>
+                <dt>Carga la URL en el contexto de navegación padre (parent) del actual. Si no existe el padre, este se comporta del mismo modo que <b>_self</b>.</dt>
+                <li><mark><b>_top:</b></mark></li>
+                <dt>Carga la URL en le contexto más alto de navegación (el cual es un ancestro del actual, y no tiene padre (parent)). Si no hay padre (parent), este se comporta del mismo modo que <b>_self</b>.</dt>
+            </ul>
+
+         <p>La etiqueta <strong>map</strong> nos permite definir una imagen con zonas seleccionables. Tiene una etiqueta name que especifica el nombre del mapa y es obligatorio. Además en la imagen tendremos que añadir el atributo usemap con el nombre del mapa. En HTML5 si utilizamos el atributo id tiene que tener el mismo valor que el name.</p>  
+         
+         <p><mark><b>Alineación</b></mark>Es posible alinear elementos en bloque (tablas, imágenes, objetos, párrafos, etc.) en el lienzo con el atributo align. Aunque este atributo se puede establecer en muchos elementos HTML, su rango de valores posibles difiere en ocasiones de unos elementos a otros. Aquí sólo se considera el significado del atributo align para texto.</p>
+
+         <h3>Atributos</h3>
+
+         <p>align = left|center|right|justify Este atributo especifica la alineación horizontal de su elemento con respecto al contexto circundante. Valores posibles:</p>
+
+         <ul>
+             <li><mark><b>left:</b></mark></li>
+             <dt>Las líneas de texto se representan con los bordes izquierdos alineados.</dt>
+             <li><mark><b>center:</b></mark></li>
+             <dt>Las líneas de texto son centradas.</dt>
+             <li><mark><b>right:</b></mark></li>
+             <dt>Las líneas de texto se representan con los bordes derechos alineados.</dt>
+             <li><mark><b>justify:</b></mark></li>
+             <dt>las líneas de texto se justifican en ambos márgenes.</dt>
+         </ul>
+
+    
+    <p>La etiqueta <!--<address>--> <strong>&lt;address&gt;</strong> fue creada con el fin de contener la información de contacto del autor de la información (dirección de correo, teléfono, etc.), pero no otro tipo de información. Normalmenre se incluye en el pie de página <!--<footer>--> <b>&lt;footer&gt;</b> general de <!--<body>--> <b>&lt;body&gt;</b> o en el pie de página <!--<footer>--> <b>&lt;footer&gt;</b> de un <!--<article></p>--> <b>&lt;article&gt;</b>
+    
+    <p>La hoja de estilo por omisión de los navegadores suele mostrar el bloque de dirección <!--<address>--> <strong>&lt;address&gt;</strong> en cursiva.</p>
+    <p>Por ejemplo:</p>
+    
+    <footer>
+    <address>
+    Autor: Nailea Cordero<br>
+    correo: corderodiazpaola@gmail.com
+    </address>
+    
+    <p>Última modificación: 29 de Octubre de 2020</p>
+    </footer>
+
+    <h2>Etiquetas de formato en html.</h2>
+
+    <p>HTML5 define varias etiquetas de formato de páginas que describen el contenido que posee. Estas etiquetas facilitan a los motores de búsqueda y los lectores de pantalla la tarea de leer y organizar su contenido. <br><br>
+
+        De forma predeterminada, varios elementos de página se definen como div, incluyendo tableros, repetidores de datos, elementos de datos, bloques de contenido y código personalizado. Utilizando la propiedad HTML Tag de un elemento de página, puede cambiar la etiqueta por unas etiquetas de bloque de HTML5, como:</p>
+
+        <ul>
+            <li><b>Artículo:</b> Un sección con un elemento independiente del contenido, como un artículo de revista o una publicación en un foro.</li>
+            <li><b>Aparte:</b> Una sección con contenidos relacionado superficialmente con el contenido de la página principal, como una barra lateral o un anuncio.</li>
+            <li><b>Detalles:</b> Una sección con detalles adicionales que el usuario puede ver u ocultar utilizando un dispositivo interactivo. También puede incluir una sección de resumen.</li>
+            <li><b>Encabezado:</b> Un sección con una introducción o un grupo de elementos de navegación.</li>
+            <li><b>Pie de página:</b> Una sección de pie de página para la sección principal o la página. Normalmente contiene información acerca de la sección principal y aparece al final de la sección.</li>
+            <li><b>Nav:</b> Una sección con vínculos de navegación.</li>
+            <li><b>Sección:</b> Una sección genérica de la página.</li>
+            <li><b>Resumen:</b> Una sección de texto o de resumen para una sección de detalles.</li>
+        </ul>
+    </div>
+</body>
+</html>
